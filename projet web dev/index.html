@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generateur de CV ! </title>
+    <style>
+        body{
+            overflow-x: hidden;
+                        background-color: #1A0129;  
+
+        }
+        /*animation p */
+        @keyframes anime_p{
+            0%   { opacity: 0; }  
+            20%  { opacity: 0; }   
+            80%  { opacity: 0; }   
+            100% { opacity: 1; } 
+        }
+        /*ANIMATION FACE 1 */
+        @keyframes anim_body {
+            from{
+                opacity: 0.7;
+                background-color: #11001C;
+            }to{
+                opacity: 1;
+            }
+            
+        }
+        
+        /*CODE H1*/    
+         @keyframes anime_h1 {
+                from{
+                    opacity: 0;
+                    color: white;
+                    padding-top: 170px;
+                    }
+                to{
+                    opacity: 1;
+                    font-weight: bolder;
+                }
+            }
+        
+        /*ANIMATION SLIDER*/
+        @keyframes slide {
+        0%   { transform: translateX(0); }
+        33%  { transform: translateX(-300px); }
+        66%  { transform: translateX(-600px); }
+        100% { transform: translateX(0); }
+        }
+        @keyframes slider_apears {
+            0%{
+                opacity: 0;
+            }
+            20%{
+                opacity: 0;
+            }
+            40%{
+                opacity: 1;
+            }
+            
+            
+        }
+        /*ANIMATION BUTTON FACE 1 */
+        @keyframes anime_butt {
+            0%{
+                opacity: 0;
+            }
+            20%{
+                opacity: 0;
+            }   
+            40%{
+                opacity: 0;
+            }
+            60%{
+                opacity: 0;
+            }
+            80%{
+                opacity:1;
+            }
+        }
+
+
+       /*CODE CSS FACE 1 */
+
+
+
+
+        .FACE1{
+            padding-top: 50px;
+            background-color: #1A0129;  
+            width:  100%;
+            
+            min-height: 700px;
+            min-width:625px;
+            margin-top: -8px;
+            margin-left: -8px;
+            margin-right: -8px;
+            animation: anim_body linear;
+            animation-duration: 0.8s;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding:4px ;
+
+        }
+        /*TITRE*/
+        h1{
+            font-size:clamp(1.3rem, 2.3vw , 4.375rem);
+            padding-left: 70px;
+            padding-top: 230px;
+            color: #757575;
+            animation: anime_h1 linear;
+            animation-duration: 1.7s ;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            /*Animation H1*/
+            letter-spacing: 5px;
+            
+            }
+        /*LES LIENS HYPERTEXTES*/
+        a{
+            text-decoration: none;
+            color: #757575;
+            transition: 0.3s;
+       }
+       a:hover{
+        text-decoration: underline;
+        color: #A8A2AB;
+        
+       }
+        
+        /*CODE CSS PARTIE TEXT ET H1 */
+        #p_f1{
+            text-align: center;
+            color: white;
+            animation: anime_p linear ;
+            animation-duration:2s ;
+            font-weight: bolder;
+            font-size: clamp(0.6rem, 1vw  , 4rem);   
+            margin-top: 4px;
+        }
+        .fp1{
+            display: flex;
+            flex-direction: column;
+            min-width: 300px;
+            flex: 1;
+            max-height: 500px;
+            margin-top: -80px;
+            padding: 30px;
+        }
+         
+        /*code description FACE 1 */
+        .DESC_CV{
+            max-width:780px ;
+            min-height: 200px;
+            margin-left: 10px;
+            
+        }
+            
+         /*CODE CSS DE SLIDER */
+         .slider {
+            flex: 1 ;
+            max-width: 700px;
+            min-width: 300px;
+            max-height:500px;
+            overflow: hidden;
+            padding-top: 60px;
+            animation: slider_apears linear;
+            animation-duration: 5s ;
+                
+        }
+
+        .slides {
+        display: flex;
+        gap:10px;
+        animation: slide 9s infinite;
+        
+        }
+
+        .slides img {
+        width: 300px;
+        height: 450px;
+        }
+        /*CODE BUTTON*/
+        .BUTT_FACE1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;            
+            min-width: 200px;
+            padding-top:60px ;
+            margin-left: -40px
+        }
+        #face1_butt{
+            max-width: 190px;
+            max-height: 40px;
+            min-width: 100px;
+            min-height: 20px;
+            padding: 25px;
+            text-align: center;
+            background-color:transparent;
+            color: #9D4EDD;
+            border-radius: 10px;
+            border: 1px solid   #9D4EDD;
+            font-family : ;
+            font-weight: bolder;
+            letter-spacing: 2px;
+            animation: anime_butt linear;
+            animation-duration: 3.8s;
+            transition: 0.1s linear;
+        }
+        #face1_butt:hover{
+            border:2px solid #995BD5;
+            color: #995BD5;
+            border-radius: 13px;
+            box-shadow: 10px 10px 10px #757575;
+
+        }
+
+
+        /*cCODE CSS FACE 2 */
+
+
+
+
+        
+        .FACE2{
+                width: 100%;
+                min-width: 425px;
+                gap: 50px;
+                padding-top: 100px;
+                padding-bottom: 100px;
+                padding: 100px;
+                background-color: aliceblue;
+            }
+            
+        #TYPE1,#TYPE2,#TYPE3{
+            background-color: transparent;
+            border-radius: 40px;
+            padding: 30px;
+            text-align: center;
+            font-size: clamp(1rem, 2vw - 1.25rem, 4rem);
+            letter-spacing: 3px;
+            border: 2px solid #9D4EDD;
+        }
+        /*.t1 {
+         margin-left: 30%;
+        }
+        .t2{
+            margin-left: 30%;
+        }
+        .t3{
+            margin-left: 30%;
+        }*/.
+        #TYPE1,#TYPE3{
+            max-height: quto;
+            max-width: 600px;
+        }
+        #TYPE2{
+            max-height: auto;
+            max-width: 700px;
+        }
+        .hidden{
+        opacity: 0;
+        filter:blur(3px);
+        transition: all 1s ease;
+        display: flex;
+        gap: 100px;
+        flex-wrap: wrap;
+        transform: translateY(100px);
+        
+        }
+        .hidden.show {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateY(0);
+
+        }
+        .t1,.t2,.t3{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 180px;
+            
+        }
+        .t1{
+        }
+        .cv_chr,.cv_antichr,.cv_fct{
+            color: #9D4EDD;
+            font-size:clamp(1.3rem, 1.3vw , 4.375rem);
+;
+        }
+        
+
+        /*FACE 3 */
+        .FACE3{
+            background-color: #11001C;
+            color:WHITE ;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            width: 100%;
+
+        }
+        .FORMULAIRE{
+            max-width: 900px;
+            background-color:#1A0129;
+        }
+        
+        .CV{
+            min-width: 540px;
+            min-height: 741px;
+            box-sizing: border-box;
+            background-image: url(cv_template.png);
+            background-repeat: no-repeat;
+            color: white;
+            overflow: 0;
+
+        }
+       /*code css nom */
+        .nom_prenom{
+            font-size: 70px;
+            font-weight:bolder;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #adress_email_cv{
+            font-size: 10px;
+            font-weight:bolder;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        #nom_cv{
+            padding-left: 220px;
+            margin-top: -50px;
+
+        }
+        #prenom_cv{
+            padding-left: 190px;
+        }
+        
+        .CV{
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+            padding-top: 26px;
+            overflow: hidden;
+            position: relative; 
+            
+            
+        }
+        .Profile{
+            background-color: blue;
+            max-width: 480px;
+            min-height: 300PX;
+            padding:2px;
+        }
+        /*CODE IMAGE CSS */
+        #preview{
+            max-width:  100px;
+            max-height: 100px;
+            border-radius: 50%; 
+            
+        }
+        .DIV_IMG_CV{
+            background-color: green;
+            max-width: 90px;
+            max-height: 200px;
+            margin-left: 20px;
+            margin-top: 50px;
+
+        }
+        /*cODE ADRESSE EMAIL */
+        .adresse_email_cv{
+            background-color: red;  
+            max-height: 24px;
+            min-width: 170px;
+            font-size: 8px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            overflow: hidden; 
+            margin-left: 240px;
+            text-align: right;
+        }
+        .partie_droit_top{
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+        }
+        /*CODE NOM PRENOM ET NOM*/
+        #prenom_cv{
+            font-size: 40px;
+            font-weight:bolder;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            letter-spacing: 0.5px;
+
+            
+        }
+        
+
+        .img_pre{
+            display: flex;
+            flex-direction: row;
+            
+            
+        }
+        .pre_nom{
+            display: flex;
+            flex-direction: column;
+            
+            margin-left: -170px;
+            float: left;
+            margin-top: 20px;
+        }
+        #nom_cv{
+
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            
+
+        }
+        /*CODE EMP RECHERCHER*/
+        .emp_rechercher{
+            background-color: #995BD5;
+            max-width: 200PX;
+            min-width: 60px;
+        }
+        .emp_email{
+            display: flex;
+            flex-direction: row;
+        }
+        #emp_rechercher{
+            font-family:'Times New Roman', Times, serif;
+            font-size: 10px;
+            text-align: center;
+            font-weight: bolder;
+        }
+        /*Code css telephone */
+        .telephone_cv{
+            background-color: aquamarine;
+            max-width: 70PX;
+            min-width: 60px;
+            margin-left: 340px;
+            font-size: 8px;
+            margin-top: -10px;
+            font-weight: bolder;
+              text-align: right;
+              font-family:cursive;
+              letter-spacing: 1px;
+        }
+        /*Code adresse */
+        .adresse_cv_total{
+            font-size: 10px;
+            background-color: #995BD5;
+            text-align: right;
+            font-size: 10px;
+            font-weight: bolder;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- cETTE PARTIE EST LA PREMIER PARTIE QUE S'AFFICHE L'ORS DE L'OVERTURE DE PAGE -->
+    <div class="FACE1">
+        
+        <div class="fp1">
+        <h1>Créez votre CV professionnel !</h1>
+        <!--PARTIE DESCRIPTIVE DES DIFFRENT CV DISPONIBLE A FAIRE POUR QUE L'UTILISATEUR AVOIR UNE IDEE PLUS CLAIRE SUR LES DIFFRENT TYPE DE CV -->
+        <div class="DESC_CV">
+    
+            <p id="p_f1">Vous avez le choix entre trois possibilités pour présenter votre curriculum vitae :<br> <br>le <span><a href="#TYPE1" >CV chronologique</a></span>, le <a href="#TYPE2"> CV antéchronologique</a>, et le <a href="#TYPE3"> CV fonctionnel</a>. <br><br>Ils présentent chacun les informations de votre profil dans un ordre différent. </p>
+            <div class="BUTT_FACE1">
+            <button id="face1_butt">CREE UN CV !</button>
+         </div>
+        </div>
+        </div>
+        <div class="slider">
+            <div class="slides">
+                <img src="IMG1.jpg" alt="">
+                <img src="IMG2.PNG">
+                <img src="IMG3.PNG">
+            </div>
+         </div>
+         
+    </div>
+    <!--CELA EN FAIT DEFINIRE LES DIFFRENTES TYPES DES CV -->
+    <div class="FACE2 " >
+        <div class="hidden">
+        <div class="t1"><div class="cv_chr "><h2>Le CV chronologique</h2>
+            </div>
+            <div class="TYPE1 hidden" id="TYPE1" name="type1">
+                
+            <p>
+                    Le CV chronologique est une structure employée qui consiste à rédiger votre curriculum vitae dans l’ordre dans lequel vous avez effectué votre parcours. Vous indiquerez donc vos informations personnelles, votre profil personnel, puis votre formation/vos études et enfin vos expériences professionnelles.
+
+Par conséquent, les recruteurs verront en premier lieu les qualifications que vous avez pu acquérir grâce à la rubrique Formation avant de se pencher sur les Expériences professionnelles et/ou les stages que vous avez à votre actif à ce moment de votre parcours.
+
+Le CV chronologique est donc une façon simple et claire de présenter votre parcours et votre profil lorsque vous soumettez votre candidature.
+
+            </p>
+        </div>
+        </div> 
+        <div class="t2">
+ <div class="cv_antichr hidden"><h2 > Le CV antéchronologique</h2></div>
+        <div class="TYPE2 hidden" id="TYPE2" name="type2">
+            
+            <p>Le CV antéchronologique est une structure qui favorise l’expérience professionnelle aux études. En ce sens, pour mettre davantage l’accent sur cet élément, la rubrique des expériences est positionnée avant celle de la formation dans le curriculum vitae. En effet, à l’inverse du CV chronologique qui reprend votre parcours en respectant l’ordre dans lequel il s’est déroulé, le CV antéchronologique choisit de ne mentionner la formation qu’à la fin. Cette rubrique n’est ainsi pas la plus importante pour ce type de CV, peu importe le type de diplôme obtenu ou la formation que vous avez pu suivre.</p>
+        </div>
+        </div>
+        <div class="t3">
+ <div class="cv_fct hidden"> <h2 > Le CV fonctionnel</h2></div>
+        <div class="TYPE3 hidden" id="TYPE3" name="type3">
+            
+           
+            <p>
+                Basé sur le savoir-faire et les compétences, le CV fonctionnel met en évidence les caractéristiques concrètes que vous pouvez apporter à l’entreprise en tant que candidat. 
+
+Vous n’êtes pas seulement une succession de postes occupés ; ce qui fait votre valeur ajoutée pour un employeur est la somme des compétences et des connaissances que vous pouvez utiliser pour la réalisation de vos fonctions dans votre nouvel environnement professionnel.
+            </p>
+        </div>
+        </div>
+       
+        </div>
+        
+    </div>
+    <!--CETTE PARTIE ET OU NOTRE UTILISATEUR CE CREE SON CV SELON LES CHOSES QU'ILS SOHAITE AJOUTER -->>
+    <div class="FACE3">
+        <!--ON VA DIVISER CETTE FACE EN DUEX PARTIE LA PREMIER CONTENANT LE FORMULAIRE LE DEUXIEME CONTENANT NOTRE CV QUE CHANGE DE MANIER RESPONSIVE LORSQUE EN ECRIRE DANS LE FORMULAIRE -->
+  
+        <!--ON VA STRUCTURER LA FORMULAIRE D'UN MANIERE QU L'UTULISATEUR PEUT AJOUTER DES DETAILS CHOISIR D'APRES UN GRAND LIST DES CHOSES -->
+        <div class="FORMULAIRE">
+            <fieldset>
+                <legend>CREE UN CV </legend>
+                <div class="INFORMATION_PERS">
+                    <h2>Information personnelles</h2>
+                    <br>
+                    <!--Code d'image-->
+                    <label for="image_upload">Image</label>
+                    <input type="file" id="uploader" accept="image/*">
+                    <label for="prenom">prenom</label>
+                    <input type="text" id="prenom" >
+                    <label for="nom">Nom de famille</label>
+                    <input type="text" id="nom">
+                    <label for="emp">Emploi recherche</label>
+                    <input type="text" id="emp">
+                    <label for="adress_email">Adresse email</label>
+                    <input type="email" id="adress_email">
+                    <label for="tel">Telephone</label>
+                    <input type="text" id="tel">
+                    <label for="adresse">Adresse</label>
+                    <input type="text" id="adresse">
+                    <label for="code_postal">Code_postal</label>
+                    <input type="text" id="code_postal">
+                    <label for="ville">Ville</label>
+                    <input type="text" id="ville" >
+
+                </div>
+                <hr>
+                <!--code partie profil de utilisateur-->
+                <div class="PROFIL">
+                    <h2>PROFIL</h2>
+                    <label for="profi l"></label>
+                    <textarea name="" id="profil" placeholder="inseret votre profil">
+                    </textarea>
+                </div>
+                <hr>
+                <div class="FORMATION">
+                    <h2>FORMATION</h2>
+                    <br>
+                    <label for="formation">Formation </label>
+                    <input type="text" id="formation">
+                    <label for="etablissment">Etablissement</label>
+                    <input type="text" id="etablissment">
+                    <label for="ville">Ville</label>
+                    <input type="text" id="ville">
+                    <label for="date_deb_formation">Date de debut</label>
+                    <select name="" id="date_deb_formation">
+                        <option value="janvier">Janvier</option>
+                        <option value="fevrier">Fevrie</option>
+                        <option value="mars">Mars</option>
+                        <option value="april">april</option>
+                        <option value="may">May</option>
+                        <option value="juin">Juin</option>
+                        <option value="juillet">Juillet</option>
+                        <option value="aout">Aout</option>
+                        <option value="septembre">septembre</option>
+                        <option value="octobre">Octobre</option>
+                        <option value="novembre">Novembre</option>
+                        <option value="decembre">Decembre</option>
+                    </select>
+                    <select name="" id="date_deb_formation_year">
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+
+                    </select>
+                    <label for="date_fin_formation">Date fin</label>
+                    <select name="" id="date_fin_formation">
+                        <option value="janvier">Janvier</option>
+                        <option value="fevrier">Fevrie</option>
+                        <option value="mars">Mars</option>
+                        <option value="april">april</option>
+                        <option value="may">May</option>
+                        <option value="juin">Juin</option>
+                        <option value="juillet">Juillet</option>
+                        <option value="aout">Aout</option>
+                        <option value="septembre">septembre</option>
+                        <option value="octobre">Octobre</option>
+                        <option value="novembre">Novembre</option>
+                        <option value="decembre">Decembre</option>
+                    </select>
+                    <select name="" id="date_fin_formation_year">
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+
+                    </select>
+                    <label for="description_formation">Description</label>
+                    <textarea name="" id="desccription_formation" placeholder="commencer a redigez ici">
+                    </textarea>
+                </div>
+                <hr>
+                <div class="EXPERIENCE_PROF">
+                    <h2>EXPERIENCE PROFESSIONELLE</h2>
+                <label for="poste">Poste</label>
+                <input type="text" id="poste">
+                <label for="employeur">Employeur</label>
+                <input type="text" id="employeur">
+                <label for="ville">Ville</label>
+                <input type="text" id="ville">
+                <label for="date_dep_exp"></label>
+                <select name="" id="date_deb_exp">
+                        <option value="janvier">Janvier</option>
+                        <option value="fevrier">Fevrie</option>
+                        <option value="mars">Mars</option>
+                        <option value="april">april</option>
+                        <option value="may">May</option>
+                        <option value="juin">Juin</option>
+                        <option value="juillet">Juillet</option>
+                        <option value="aout">Aout</option>
+                        <option value="septembre">septembre</option>
+                        <option value="octobre">Octobre</option>
+                        <option value="novembre">Novembre</option>
+                        <option value="decembre">Decembre</option>
+                    </select>
+                    <select name="" id="date_deb_exp_year">
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+
+                    </select>
+                    <label for="date_fin_exp">Date fin</label>
+                    <select name="" id="date_fin_exp">
+                        <option value="janvier">Janvier</option>
+                        <option value="fevrier">Fevrie</option>
+                        <option value="mars">Mars</option>
+                        <option value="april">april</option>
+                        <option value="may">May</option>
+                        <option value="juin">Juin</option>
+                        <option value="juillet">Juillet</option>
+                        <option value="aout">Aout</option>
+                        <option value="septembre">septembre</option>
+                        <option value="octobre">Octobre</option>
+                        <option value="novembre">Novembre</option>
+                        <option value="decembre">Decembre</option>
+                    </select>
+                    <select name="" id="date_fin_exp_year">
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+
+                    </select>
+                    <label for="description_exp"></label>
+                    <textarea name="" id="description_exp" placeholder="commencer a redigez ici">
+                    </textarea>
+                </div>
+                <hr>
+                <div class="COMPETENCE">
+                    <h2>COMPETENCE</h2>
+                    <label for="competence">Competence</label>
+                    <input type="text" id="competence">
+                    <label for="niveau">Niveau</label>
+                    <input type="text" id="niveau" placeholder="choissiez">
+                </div>
+                <hr>
+                <div class="LANGUAGE">
+                    <h2>LANGUAGE</h2>
+                    <label for="langue">Competence</label>
+                    <input type="text" id="langue">
+                    <label for="niveau_lang">Niveau</label>
+                    <input type="text" id="niveau_lang" placeholder="choissiez">
+                </div>
+                <hr>
+                <div class="CENTRE_INTERET">
+                    <h2>CENTRE_INTERET</h2>
+                    <label for="centre">Centre d'intérêt</label>
+                    <input type="text" id="centre">
+                </div>
+                <hr>
+                <div class="ACTIVITES_EXTRA_SCHO">
+                <h2>ACTIVITES_EXTRA_SCHOLAIRE</h2>
+                <label for="poste_x_scho">Poste</label>
+                <input type="text" id="poste_x_scho">
+                <label for="employeur_x_scho">Employeur</label>
+                <input type="text" id="employeur_x_scho">
+                <label for="ville_x_scho">Ville</label>
+                <input type="text" id="ville_x_scho">
+                <label for="date_dep_act_x"></label>
+                <select name="" id="date_dep_act_x">
+                        <option value="janvier">Janvier</option>
+                        <option value="fevrier">Fevrie</option>
+                        <option value="mars">Mars</option>
+                        <option value="april">april</option>
+                        <option value="may">May</option>
+                        <option value="juin">Juin</option>
+                        <option value="juillet">Juillet</option>
+                        <option value="aout">Aout</option>
+                        <option value="septembre">septembre</option>
+                        <option value="octobre">Octobre</option>
+                        <option value="novembre">Novembre</option>
+                        <option value="decembre">Decembre</option>
+                    </select>
+                    <select name="" id="date_deb_exp_year">
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+
+                    </select>
+                    <label for="date_fin_act_x">Date fin</label>
+                    <select name="" id="date_fin_act_x">
+                        <option value="janvier">Janvier</option>
+                        <option value="fevrier">Fevrie</option>
+                        <option value="mars">Mars</option>
+                        <option value="april">april</option>
+                        <option value="may">May</option>
+                        <option value="juin">Juin</option>
+                        <option value="juillet">Juillet</option>
+                        <option value="aout">Aout</option>
+                        <option value="septembre">septembre</option>
+                        <option value="octobre">Octobre</option>
+                        <option value="novembre">Novembre</option>
+                        <option value="decembre">Decembre</option>
+                    </select>
+                    <select name="" id="date_fin_act_x_year">
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+
+                    </select>
+                    <label for="description_x_scho"></label>
+                    <textarea name="" id="description_x_scho" placeholder="commencer a redigez ici">
+                    </textarea>
+                </div>
+            </fieldset>
+
+        </div>
+
+        <div class="CV">
+            <div class="Profile">
+                <div class="emp_email">
+                <div class="emp_rechercher">
+                    <p id="emp_rechercher"> toutout</p>
+                </div>
+                <div class="partie_droit_top">
+                    <div class="adresse_cv_total">
+                        <p id="adresse_cv">ssssssssttt</p>
+                        <p id="code_postal_cv">tttttttttt</p>
+                        <p id="ville_cv">pppppppppp</p>
+                    </div>
+                    <div class="adresse_email_cv">
+                    <p id="adresse_email_cv">MiladeDimassi@gmail.com</p>
+                    </div>
+                    <div class="telephone_cv">
+                        <p id="telephone_cv"></p>
+                    </div>
+                </div>
+                
+                </div>
+                
+                <div class="img_pre">
+                <div class="DIV_IMG_CV">
+                    <div class="img_per">
+                        
+                        <img id="preview" style="max-width: 300px; display:none;">
+                    </div>
+                </div>
+                <div class="pre_nom">
+                    <p id="prenom_cv">jnbjknkjn</p>
+                    <p id="nom_cv">sdssdsd</p>
+                
+                </div>
+                </div>
+                
+                 
+                
+
+            </div>
+            <div class="employement_history">
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+    //code de slider 
+    const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        }else{
+            entry.target.classList.remove('show')
+        }
+    });
+    });
+    const hidden = document.querySelectorAll('.hidden')
+    hidden.forEach((el) => observer.observe(el));
+
+    //code de recuperation d'image
+
+    document.getElementById("uploader").addEventListener("change", function(event) {
+    const file = event.target.files[0];     // Récupère l'image
+    const img = document.getElementById("preview");
+
+    if (file) {
+        img.src = URL.createObjectURL(file); // Crée un lien temporaire vers l'image
+        img.style.display = "block";         // Affiche l’image
+    }
+});
+    //code de l'affichage de prenom 
+    const prenom_cv = document.getElementById("prenom_cv")
+    const prenom =document.getElementById("prenom")
+    
+    prenom.addEventListener("input", function (e) {
+        prenom_cv.textContent = e.target.value;
+        
+    })
+
+    const nom_cv=document.getElementById("nom_cv");
+    const nom =document.getElementById("nom");
+    
+    nom.addEventListener("input", function (e) {
+        nom_cv.textContent = e.target.value;        
+})
+    const adresse_email_cv=document.getElementById("adresse_email_cv");
+    const adress_email =document.getElementById("adress_email");
+    
+    adress_email.addEventListener("input", function (e) {
+        adresse_email_cv.textContent = e.target.value;
+        
+})
+    //code affichage d_emp rechercher
+    const emp_rechercher=document.getElementById("emp_rechercher");
+    const emp =document.getElementById("emp");
+    
+    emp.addEventListener("input", function (e) {
+        emp_rechercher.textContent = e.target.value;
+        
+})
+ //code affichage de telephone
+    const telephone_cv=document.getElementById("telephone_cv");
+    const tel =document.getElementById("tel");
+    
+    tel.addEventListener("input", function (e) {
+        telephone_cv.textContent = e.target.value;
+        
+})
+//Code adresse 
+const adresse_cv=document.getElementById("adresse_cv");
+    const adresse =document.getElementById("adresse");
+    
+    adresse.addEventListener("input", function (e) {
+        adresse_cv.textContent = e.target.value;
+        
+})
+const ville_cv=document.getElementById("ville_cv");
+    const ville=document.getElementById("ville");
+    
+    ville.addEventListener("input", function (e) {
+        ville_cv.textContent = e.target.value;
+        
+})
+    const code_postal =document.getElementById("code_postal");
+    const code_postal_cv=document.getElementById("code_postal_cv");
+    code_postal.addEventListener("input", function (e) {
+        code_postal_cv.textContent = e.target.value;
+        
+})
+    </script>
+
+</body>
+
+</html>
