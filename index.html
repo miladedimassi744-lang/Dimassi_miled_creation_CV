@@ -239,20 +239,20 @@
             padding: 30px;
             text-align: center;
             font-size: clamp(1rem, 2vw - 1.25rem, 4rem);
-            letter-spacing: 3px;
             border: 2px solid #9D4EDD;
+            font-weight: bolder;    
         }
-        /*.t1 {
-         margin-left: 30%;
+        .t1 {
+         margin-left: 10%;
         }
         .t2{
-            margin-left: 30%;
+            margin-left: 10%;
         }
         .t3{
-            margin-left: 30%;
-        }*/.
+            margin-left: 11%;
+        }
         #TYPE1,#TYPE3{
-            max-height: quto;
+            max-height: auto;
             max-width: 600px;
         }
         #TYPE2{
@@ -296,12 +296,13 @@
             color:WHITE ;
             display: flex;
             flex-wrap: wrap;
-            gap: 40px;
+            gap: 30px;
             width: 100%;
+            
 
         }
         .FORMULAIRE{
-            max-width: 900px;
+            min-width: 800px;
             background-color:#1A0129;
         }
         
@@ -314,8 +315,7 @@
             position: relative;
             min-height: 600px;
             max-height: 800px; 
-            background-color: #9D4EDD;
-            min-width: 540px;
+                min-width: 540px;
             min-height: 741px;
             box-sizing: border-box;
             background-image: url(cv_template.png);
@@ -323,6 +323,8 @@
             background-size: auto;
             color: white;
             overflow: 0;
+            position:sticky;
+            top: 0;
 
         }
        /*code css nom */
@@ -349,9 +351,9 @@
         }
         
         .INFORMATION_PERS_CV{
-            background-color: blue;
             max-width: 480px;
-            min-height: 300PX;
+            max-height: 2600px;
+            min-height: 200px;
             padding:2px;
         }
         /*CODE IMAGE CSS */
@@ -362,7 +364,6 @@
             
         }
         .DIV_IMG_CV{
-            background-color: green;
             max-width: 90px;
             max-height: 200px;
             margin-left: 20px;
@@ -371,7 +372,6 @@
         }
         /*cODE ADRESSE EMAIL */
         .adresse_email_cv{
-            background-color: red;  
             max-height: 24px;
             min-width: 170px;
             font-size: 8px;
@@ -402,6 +402,7 @@
         .img_pre{
             display: flex;
             flex-direction: row;
+            gap: 10px;
             
             
         }
@@ -411,7 +412,6 @@
             
             margin-left: -170px;
             float: left;
-            margin-top: 20px;
             word-wrap: break-word;
             overflow-wrap: break-word;
             white-space: normal;
@@ -428,7 +428,6 @@
         }
         /*CODE EMP RECHERCHER*/
         .emp_rechercher{
-            background-color: #995BD5;
             max-width: 200PX;
             min-width: 60px;
         }
@@ -444,7 +443,6 @@
         }
         /*Code css telephone */
         .telephone_cv{
-            background-color: aquamarine;
             max-width: 70PX;
             min-width: 60px;
             margin-left: 340px;
@@ -458,7 +456,6 @@
         /*Code adresse */
         .adresse_cv_total{
             font-size: 10px;
-            background-color: #995BD5;
             text-align: right;
             font-size: 10px;
             font-weight: bolder;
@@ -475,19 +472,18 @@
             display: flex;
             flex-direction: row;
             gap: 90px;
-            background-color: violet;
             }
         #line,#line2,#line3,#line4,#line5,#line6{
             width: 481px;
             color: white;
         }
-        #profile_cv,#foramtion_cv,#exp_pro_cv,#comp_cv,#lang_cv,#centre_inter_cv    {
+        #profile_cv,#formation_cv,#exp_pro_cv,#comp_cv,#lang_cv,#centre_inter_cv    {
             word-wrap: break-word;
             overflow-wrap: break-word;
             white-space: normal;
             overflow: hidden;
             padding-right: 20px;
-            font-size: 14px;
+            font-size: 11px;
             font-family:'Times New Roman', Times, serif;
             font-weight: bolder;
             letter-spacing: 0.3px;
@@ -495,7 +491,7 @@
         #profile_text,#formation_text,#exp_pro_text,#comp_text,#lang_text,#centre_inter_text{
             
             font-weight: bolder;
-            font-size: 13px;
+            font-size:10px;
         }
 
 
@@ -509,6 +505,83 @@
             font-size: 9px;
         }
 
+        /*styling de mes input dans le fomulaire */
+        input,textarea{
+
+            width: 270px;
+            height:30px;
+            border-radius: 20px;
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            font-weight: bolder;
+            transition: 0.2s linear;
+        }
+        #uploader{
+            width: 110px;
+            height: 20px;
+            border-radius: 30px;
+            background-color:#9D4EDD;
+        }
+        .INFORMATION_PERS,.FORMATION,.EXPERIENCE_PROF,.COMPETENCE,.LANGUAGE,.CENTRE_INTERET,.PROFIL{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        input:hover,textarea:hover {
+            background-color:#582682;
+            text-align:center;
+        }
+        select{
+            border-radius: 30px;
+            width: 120px;
+            height: 30px;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 12px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color:#582682;
+            color: white;
+            transition: 0.2s linear;
+            margin-top: 10px;
+        }
+        select:hover{
+            background-color: transparent;
+             color: white;
+
+        }
+        button{
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            height: 40px;
+            width: 200px;
+            text-align: center;
+            font-weight: bolder ;
+            margin-top: 20px;
+            transition: 0.2s ;
+            margin-bottom: 15px;
+        }
+        button:hover{
+            background-color: white;
+            color: #582682;
+            border: 1px solid #582682;
+            border-radius: 10px;
+        }
+        option{
+            background-color: #582682;
+            color: white;
+            font-weight: bolder;
+            font-family: 'Times New Roman', Times, serif;        
+        }
+        #telecharge_but{
+                margin-left: 280px;
+                margin-top: 60px;
+                align-items: center;
+                
+            }
+             
         
     </style>
 
@@ -839,125 +912,27 @@ Vous n’êtes pas seulement une succession de postes occupés ; ce qui fait vot
                     <label for="centre">Centre d'intérêt</label>
                     <input type="text" id="centre">
                 </div>
-                <hr>
-                <div class="ACTIVITES_EXTRA_SCHO">
-                <h2>ACTIVITES_EXTRA_SCHOLAIRE</h2>
-                <label for="poste_x_scho">Poste</label>
-                <input type="text" id="poste_x_scho">
-                <label for="employeur_x_scho">Employeur</label>
-                <input type="text" id="employeur_x_scho">
-                <label for="ville_x_scho">Ville</label>
-                <input type="text" id="ville_x_scho">
-                <label for="date_dep_act_x"></label>
-                <select name="" id="date_dep_act_x">
-                        <option value="janvier">Janvier</option>
-                        <option value="fevrier">Fevrie</option>
-                        <option value="mars">Mars</option>
-                        <option value="april">april</option>
-                        <option value="may">May</option>
-                        <option value="juin">Juin</option>
-                        <option value="juillet">Juillet</option>
-                        <option value="aout">Aout</option>
-                        <option value="septembre">septembre</option>
-                        <option value="octobre">Octobre</option>
-                        <option value="novembre">Novembre</option>
-                        <option value="decembre">Decembre</option>
-                    </select>
-                    <select name="" id="date_deb_exp_year">
-                        <option value="2000">2000</option>
-                        <option value="2001">2001</option>
-                        <option value="2002">2002</option>
-                        <option value="2003">2003</option>
-                        <option value="2004">2004</option>
-                        <option value="2005">2005</option>
-                        <option value="2006">2006</option>
-                        <option value="2007">2007</option>
-                        <option value="2008">2008</option>
-                        <option value="2009">2009</option>
-                        <option value="2010">2010</option>
-                        <option value="2011">2011</option>
-                        <option value="2012">2012</option>
-                        <option value="2013">2013</option>
-                        <option value="2014">2014</option>
-                        <option value="2015">2015</option>
-                        <option value="2016">2016</option>
-                        <option value="2017">2017</option>
-                        <option value="2018">2018</option>
-                        <option value="2019">2019</option>
-                        <option value="2020">2020</option>
-                        <option value="2021">2021</option>
-                        <option value="2022">2022</option>
-                        <option value="2023">2023</option>
-                        <option value="2024">2024</option>
-                        <option value="2025">2025</option>
-
-                    </select>
-                    <label for="date_fin_act_x">Date fin</label>
-                    <select name="" id="date_fin_act_x">
-                        <option value="janvier">Janvier</option>
-                        <option value="fevrier">Fevrie</option>
-                        <option value="mars">Mars</option>
-                        <option value="april">april</option>
-                        <option value="may">May</option>
-                        <option value="juin">Juin</option>
-                        <option value="juillet">Juillet</option>
-                        <option value="aout">Aout</option>
-                        <option value="septembre">septembre</option>
-                        <option value="octobre">Octobre</option>
-                        <option value="novembre">Novembre</option>
-                        <option value="decembre">Decembre</option>
-                    </select>
-                    <select name="" id="date_fin_act_x_year">
-                        <option value="2000">2000</option>
-                        <option value="2001">2001</option>
-                        <option value="2002">2002</option>
-                        <option value="2003">2003</option>
-                        <option value="2004">2004</option>
-                        <option value="2005">2005</option>
-                        <option value="2006">2006</option>
-                        <option value="2007">2007</option>
-                        <option value="2008">2008</option>
-                        <option value="2009">2009</option>
-                        <option value="2010">2010</option>
-                        <option value="2011">2011</option>
-                        <option value="2012">2012</option>
-                        <option value="2013">2013</option>
-                        <option value="2014">2014</option>
-                        <option value="2015">2015</option>
-                        <option value="2016">2016</option>
-                        <option value="2017">2017</option>
-                        <option value="2018">2018</option>
-                        <option value="2019">2019</option>
-                        <option value="2020">2020</option>
-                        <option value="2021">2021</option>
-                        <option value="2022">2022</option>
-                        <option value="2023">2023</option>
-                        <option value="2024">2024</option>
-                        <option value="2025">2025</option>
-
-                    </select>
-                    <label for="description_x_scho"></label>
-                    <textarea name="" id="description_x_scho" placeholder="commencer a redigez ici">
-                    </textarea>
-                </div>
-            </fieldset>
-
+                
+                <div class="but_tel">
+                   <button id="telecharge_but">TELECHARGER VOTRE CV!</button> 
         </div>
-
-        <div class="CV">
+            </fieldset>
+            </div>
+            
+            <div class="CV">
             <div class="INFORMATION_PERS_CV">
                 <div class="emp_email">
                 <div class="emp_rechercher">
-                    <p id="emp_rechercher"> toutout</p>
+                    <p id="emp_rechercher"> </p>
                 </div>
                 <div class="partie_droit_top">
                     <div class="adresse_cv_total">
-                        <p id="adresse_cv">ssssssssttt</p>
-                        <p id="code_postal_cv">tttttttttt</p>
-                        <p id="ville_cv">pppppppppp</p>
+                        <p id="adresse_cv"></p>
+                        <p id="code_postal_cv"></p>
+                        <p id="ville_cv"></p>
                     </div>
                     <div class="adresse_email_cv">
-                    <p id="adresse_email_cv">MiladeDimassi@gmail.com</p>
+                    <p id="adresse_email_cv"></p>
                     </div>
                     <div class="telephone_cv">
                         <p id="telephone_cv"></p>
@@ -974,8 +949,8 @@ Vous n’êtes pas seulement une succession de postes occupés ; ce qui fait vot
                     </div>
                 </div>
                 <div class="pre_nom">
-                    <p id="prenom_cv">jnbjknkjn</p>
-                    <p id="nom_cv">sdssdsd</p>
+                    <p id="prenom_cv"></p>
+                    <p id="nom_cv"></p>
                 
                 </div>
                 </div>
@@ -1013,9 +988,11 @@ Vous n’êtes pas seulement une succession de postes occupés ; ce qui fait vot
                 <p id="centre_inter_text"></p>
                 <p id="centre_inter_cv"></p>
             </div>
-            
+         </div>
         </div>
-    </div>
+
+     
+        
 
 
 
