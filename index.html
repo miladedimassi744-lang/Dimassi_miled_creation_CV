@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generateur de CV ! </title>
+   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
     <style>
         body{
             overflow-x: hidden;
@@ -243,13 +245,13 @@
             font-weight: bolder;    
         }
         .t1 {
-         margin-left: 10%;
+         /*margin-left: 10%;*/
         }
         .t2{
-            margin-left: 10%;
+            /*margin-left: 10%;*/
         }
         .t3{
-            margin-left: 11%;
+           /* margin-left: 11%;*/
         }
         #TYPE1,#TYPE3{
             max-height: auto;
@@ -323,8 +325,9 @@
             background-size: auto;
             color: white;
             overflow: 0;
-            position:sticky;
+            position: sticky;
             top: 0;
+
 
         }
        /*code css nom */
@@ -575,7 +578,7 @@
             font-weight: bolder;
             font-family: 'Times New Roman', Times, serif;        
         }
-        #telecharge_but{
+        #download{
                 margin-left: 280px;
                 margin-top: 60px;
                 align-items: center;
@@ -604,9 +607,12 @@
         </div>
         <div class="slider">
             <div class="slides">
-                <img src="IMG1.jpg" alt="">
+                <img src="IMG1.jpg">
                 <img src="IMG2.PNG">
+                <img src="IMG4.png" >
+                
                 <img src="IMG3.PNG">
+                
             </div>
          </div>
          
@@ -914,12 +920,12 @@ Vous n’êtes pas seulement une succession de postes occupés ; ce qui fait vot
                 </div>
                 
                 <div class="but_tel">
-                   <button id="telecharge_but">TELECHARGER VOTRE CV!</button> 
+                   <button id="download" >TELECHARGER VOTRE CV!</button> 
         </div>
             </fieldset>
             </div>
             
-            <div class="CV">
+            <div class="CV" id="CV">
             <div class="INFORMATION_PERS_CV">
                 <div class="emp_email">
                 <div class="emp_rechercher">
@@ -1227,9 +1233,28 @@ centre.addEventListener("input", function (e) {
         
 })
 
+</script>
+ <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script>
+document.getElementById("download").addEventListener("click", function() {
+    const cv = document.getElementById("CV");
 
-    </script>
-
+    // On utilise html2canvas
+    html2canvas(cv, {
+        scale: 2,
+        useCORS: true,
+        scrollY: -window.scrollY  // Important pour capturer le contenu hors écran
+    }).then(canvas => {
+        const link = document.createElement("a");
+        link.download = "mon_cv.jpg";
+        link.href = canvas.toDataURL("image/jpeg", 1.0);
+        link.click();
+    }).catch(err => {
+        console.error("Erreur lors de la capture : ", err);
+        alert("Impossible de télécharger le CV. Vérifiez la console.");
+    });
+});
+</script>
 </body>
 
 </html>
