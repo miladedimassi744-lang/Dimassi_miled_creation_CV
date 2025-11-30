@@ -81,6 +81,14 @@
                 opacity:1;
             }
         }
+@keyframes anime_bar {
+    from{
+        margin-top: -100px;
+    }
+    to{
+        margin-top: 0;
+    }
+}
 
 
        /*CODE CSS FACE 1 */
@@ -301,7 +309,7 @@
             flex-wrap: wrap;
             gap: 200px;
             width: 100%;
-            
+            margin-top: 60px;
 
         }
         hr{
@@ -320,10 +328,9 @@
             padding-top: 26px;
             overflow: hidden;
             position: relative;
-            min-height: 600px;
-            max-height: 800px; 
-                min-width: 540px;
-            min-height: 741px;
+            max-height: 690px; 
+            min-width: 520px;
+            min-height: 738px;
             box-sizing: border-box;
             background-image: url(cv_template.png);
             background-repeat: no-repeat;
@@ -332,7 +339,6 @@
             overflow: 0;
             position: sticky;
             top: 0;
-
 
         }
        /*code css nom */
@@ -589,6 +595,7 @@
                 align-items: center;
                 
             }
+/*code css top bar*/
              
         .top_bar{
 color: white;
@@ -598,21 +605,13 @@ flex-wrap:5 wrap;
 width: 100%;
 height: 70px;
 text-align: center;
-background-color: #2f124d;
+background-color: #1A0129;
 
 animation: anime_bar;
-animation-duration: 1s  ;
+animation-duration:2s   ;
 min-width: 1200px;
-margin-left: -10px;
+margin-right: -20px;
 
-}
-@keyframes anime_bar {
-    from{
-        margin-top: -100px;
-    }
-    to{
-        margin-top: 0;
-    }
 }
 
         #a1,#a2,#a3{color: white;
@@ -622,13 +621,15 @@ margin-left: -10px;
             transition: 0.2s ;
             font-size: 17px;
             display: inline-block;
-         padding: 10px 15px;
+            padding: 10px 15px;
          margin-left: 300px;
+         text-decoration: none;
         }
         #a1:hover,#a2:hover,#a3:hover{
-            text-decoration: underline;
-            color: #A8A2AB;
-            box-shadow: 10px 10px 10px black;
+            box-shadow: 5px 5px 5px #757575;
+            border: 1px solid white;
+            /*background-color: white;*/
+
         }
 
 
@@ -641,9 +642,10 @@ margin-left: -10px;
   }
 
 }
+/*code css partie consilles */
 .cons{
-    background-color:#582682;
-    padding: 100px;
+    background-color:#3e3d3d;
+    padding: 50px;
     margin: 100px;
     border-radius: 20px;
     font-size: 20px;
@@ -658,8 +660,9 @@ margin-left: -10px;
     min-width: 300px;
     max-width: auto;
     } 
-.cons.p{
-                font-size:clamp(0.6rem, 2.3vw , 4.375rem);
+#p_cons{
+                font-size:clamp(1rem, 1vw , 4.375rem);
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 .cons:hover{
@@ -673,6 +676,37 @@ margin-left: -10px;
         transform: translateX(0);
 
         }
+a{
+    text-decoration: none;
+}
+#but_a{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#h1_cons{
+    color: white;
+    text-align: center; 
+    font-family: 'Times New Roman', Times, serif    ;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+}
+/*code css de label et legend de partie fieldset */
+label{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    letter-spacing: 0.4px;
+    padding: 10px;
+}
+
+legend{
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
 </style>
 
 </head>
@@ -694,7 +728,7 @@ margin-left: -10px;
     
             <p id="p_f1">Vous avez le choix entre trois possibilités pour présenter votre curriculum vitae :<br> <br>le <span><a href="#TYPE1" >CV chronologique</a></span>, le <a href="#TYPE2"> CV antéchronologique</a>, et le <a href="#TYPE3"> CV fonctionnel</a>. <br><br>Ils présentent chacun les informations de votre profil dans un ordre différent. </p>
             <div class="BUTT_FACE1">
-            <button id="face1_butt">CREE UN CV !</button>
+            <button id="face1_butt"     ><a  id="but_a" href="#FORM">CREE UN CV !</a></button>
          </div>
         </div>
         </div>
@@ -750,9 +784,9 @@ Vous n’êtes pas seulement une succession de postes occupés ; ce qui fait vot
         </div>
         
     </div>
-    <hr>
+    <h1 id="h1_cons">DES CONSEILLES !</h1>
     <div class="cons" id="CONS">
-        <p>Un CV percutant, c’est un CV qui se lit facilement ! Aussi, pour retenir l’attention des recruteurs qui reçoivent jusqu’à une centaine de CV par jour et qui doivent donc aller vite, parfois très vite, pour trier les candidatures. Il est essentiel que les grandes lignes de votre parcours professionnel ressortent au premier coup d’œil ! Carte de visite indispensable de votre recherche d’emploi et pour décrocher un entretien de recrutement, votre curriculum vitae doit donc expliquer clairement votre parcours et vos réalisations, mais également dévoiler vos compétences techniques et votre personnalité. Alors comment rédiger un « bon » CV ? Quels éléments en particulier peuvent faire la différence aux yeux des recruteurs ?  Nos 10 conseils d’experts pour vous aider à rédiger votre CV.
+        <p id="p_cons">Un CV percutant, c’est un CV qui se lit facilement ! Aussi, pour retenir l’attention des recruteurs qui reçoivent jusqu’à une centaine de CV par jour et qui doivent donc aller vite, parfois très vite, pour trier les candidatures. Il est essentiel que les grandes lignes de votre parcours professionnel ressortent au premier coup d’œil ! Carte de visite indispensable de votre recherche d’emploi et pour décrocher un entretien de recrutement, votre curriculum vitae doit donc expliquer clairement votre parcours et vos réalisations, mais également dévoiler vos compétences techniques et votre personnalité. Alors comment rédiger un « bon » CV ? Quels éléments en particulier peuvent faire la différence aux yeux des recruteurs ?  Nos 10 conseils d’experts pour vous aider à rédiger votre CV.
 
 Soyez concis dans la rédaction de votre CV
 Adaptez votre CV à l’offre d’emploi
@@ -765,7 +799,6 @@ Ne négligez pas la section « centres d’intérêt »
 Soyez honnête sur votre CV
 Faites relire votre CV</p>
     </div>
-    <hr>
     <!--CETTE PARTIE ET OU NOTRE UTILISATEUR CE CREE SON CV SELON LES CHOSES QU'ILS SOHAITE AJOUTER -->>
     <div class="FACE3">
         <!--ON VA DIVISER CETTE FACE EN DUEX PARTIE LA PREMIER CONTENANT LE FORMULAIRE LE DEUXIEME CONTENANT NOTRE CV QUE CHANGE DE MANIER RESPONSIVE LORSQUE EN ECRIRE DANS LE FORMULAIRE -->
@@ -1297,7 +1330,7 @@ ville_exp_pro.addEventListener("change", function (e) {
 
             
     })
-    //code competence
+//code competence
     const comp=document.getElementById("competence");
     const comp_cv=document.getElementById("comp_cv");
     const comp_text=document.getElementById("comp_text");
@@ -1353,7 +1386,7 @@ document.getElementById("download").addEventListener("click", function() {
     html2canvas(cv, {
         scale: 2,
         useCORS: true,
-        scrollY: -window.scrollY  // Important pour capturer le contenu hors écran
+        scrollY: -window.scrollY  
     }).then(canvas => {
         const link = document.createElement("a");
         link.download = "mon_cv.jpg";
